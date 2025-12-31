@@ -11,7 +11,7 @@ public with sharing class CloudVisionController {
         HttpRequest req = new HttpRequest();
 
         req.setMethod('POST');
-        req.setEndpoint('https://vision.googleapis.com/v1/images:annotate?key=REMOVED');
+        req.setEndpoint('https://vision.googleapis.com/v1/images:annotate?key=');
         req.setHeader('content-Type', 'application/json');
         req.setBody(requestBody);
         HttpResponse res = http.send(req);
